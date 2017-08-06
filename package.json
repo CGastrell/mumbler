@@ -1,6 +1,6 @@
 {
   "name": "mumbler",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "send stdout through socket.io",
   "main": "index.js",
   "scripts": {
