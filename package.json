@@ -1,0 +1,19 @@
+{
+  "name": "mumbler",
+  "version": "1.0.0",
+  "description": "send stdout through socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "intercept-stdout": "^0.1.2",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}
