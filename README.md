@@ -46,8 +46,9 @@ Restify _usually_ keeps a reference to the http server instance on
 just to check on my own developments and then decided it _could_ be
 useful for someone else.
 ```javascript
-var restify	  	 		  =	require('restify')
-//crate the http server
+var restify = require('restify')
+
+// create the http server
 var server = restify.createServer(/* some config here */)
 
 server.get('/mumbler', require('mumbler')(server.server))
