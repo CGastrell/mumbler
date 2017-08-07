@@ -1,6 +1,6 @@
 {
   "name": "mumbler",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "send stdout through socket.io",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "intercept-stdout": "^0.1.2",
     "socket.io": "^2.0.3"
   },
   "devDependencies": {
