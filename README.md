@@ -2,11 +2,16 @@
 send all those console.log through socket.io on any endpoint, you know,
 just to keep an eye on things...
 
+**Mumbler** will capture `stdout` and send it through a socket.io connection.
+
+**stderr** is left untouched since it collided with the most popular package
+[debug](https://github.com/visionmedia/debug)
+
 ## Note
 I built it just to experiment but then I thought someone could benefit from it.
 
-**Rememeber**: I didn't fully test the package, I got it to work on a simple
-Express and a Restify one.
+**Remember**: I didn't fully test the package, I got it to work on both a simple
+Express app and a Restify one.
 
 This package **HAS NOT BEEN THOROUGHLY TESTED, USAGE ON PRODUCTION IS,
 THEREFORE, NOT RECOMMENDED**
