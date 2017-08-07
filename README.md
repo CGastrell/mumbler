@@ -1,5 +1,5 @@
 # mumbler
-send all those console.log through socket.io on any endpoint, you know,
+send all those `console.log` outputs through socket.io on any endpoint, you know,
 just to keep an eye on things...
 
 **Mumbler** will capture `stdout` and send it through a socket.io connection.
@@ -8,7 +8,7 @@ just to keep an eye on things...
 [debug](https://github.com/visionmedia/debug)
 
 ## Note
-I built it just to experiment but then I thought someone could benefit from it.
+I built Mumbler just to experiment with, but then I thought someone could benefit from it.
 
 **Remember**: I didn't fully test the package, I got it to work on both a simple
 Express app and a Restify one.
