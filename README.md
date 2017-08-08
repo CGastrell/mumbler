@@ -2,10 +2,12 @@
 send all those `console.log` outputs through socket.io on any endpoint, you know,
 just to keep an eye on things...
 
-**Mumbler** will capture `stdout` and send it through a socket.io connection.
+**Mumbler** will intercept `stdout`/`stderr` and send it through a socket.io connection.
 
-**stderr** is left untouched since it collided with the most popular package
-[debug](https://github.com/visionmedia/debug)
+
+# Do NOT USE WITH `DEBUG=*`
+It just explodes, trust me.
+
 
 ## Note
 I built Mumbler just to experiment with, but then I thought someone could benefit from it.
@@ -17,13 +19,15 @@ This package **HAS NOT BEEN THOROUGHLY TESTED, USAGE ON PRODUCTION IS,
 THEREFORE, NOT RECOMMENDED**
 
 The main purpose is just for development as the package **does not
-enforce any security** and it will send any `stdout` data to
+enforce any security** and it will send any `stdout`/`stderr` data to
 connected clients on the designated endpoint.
+
 
 ## Install
 ```bash
 npm install mumbler --save
 ```
+
 
 ## Usage with Express
 ```javascript
@@ -39,6 +43,7 @@ http.listen(3000, function(){
 // spit some output constantly so we can check output
 setInterval(function(){console.log(new Date())}, 1000)
 ```
+
 
 ## Usage with Restify
 Restify _usually_ keeps a reference to the http server instance on

@@ -362,7 +362,7 @@
       document.body.appendChild(el)
       document.body.appendChild(document.createElement('br'))
     }
-    var socket = io()
+    var socket = io('/mumbler-io')
     socket.on('log', function (msg) {
       // check if we are on the bottom of the scroll
       var clientIsOnEdge = (document.body.scrollHeight - document.body.scrollTop) === window.innerHeight
