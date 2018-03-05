@@ -31,7 +31,9 @@ npm install mumbler --save
 
 ## Usage with Express
 ```javascript
-var mumbler = require('mumbler')
+var app = require('express')();
+var http = require('http').Server(app);
+var mumbler = require('mumbler');
 
 // attach to some endpoint
 app.get('/mumbler', mumbler(http));
