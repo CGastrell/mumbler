@@ -5,7 +5,6 @@ Restify _usually_ keeps a reference to the http server instance on
 just to check on my own developments and then decided it _could_ be
 useful for someone else.
 
-{% sample lang="js" %}
 
 ```js
 var restify = require('restify')
