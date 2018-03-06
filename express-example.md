@@ -1,7 +1,5 @@
 ## Usage with Express
 
-{% sample lang="js" %}
-
 ```js
 var app = require('express')();
 var http = require('http').Server(app);
