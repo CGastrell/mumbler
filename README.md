@@ -1,6 +1,6 @@
 # mumbler
-An express endpoint send all those `console.log` outputs through socket.io on any endpoint, you know,
-just to keep an eye on things...
+An express endpoint to send all those `console.log` outputs through socket.io on any endpoint. You know,
+just to keep an eye on things while developing...
 
 **Mumbler** will intercept `stdout`/`stderr` and send it through a socket.io connection.
 
